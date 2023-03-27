@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "HnMJMM49V9LKy3dQRZk6QOCbZvwgyGdozYojwzfePmm4kdfPEbWvSF0wu9vAiLy1V7I6aGwNH+SpI59CMu8hFA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Valtinho\\Programas\\ASPNETCORE\\ProjetoLojaVendasWeb\\ProjetoLojaVendasWeb.Repositorio\\ProjetoLojaVendasWeb.Repositorio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
