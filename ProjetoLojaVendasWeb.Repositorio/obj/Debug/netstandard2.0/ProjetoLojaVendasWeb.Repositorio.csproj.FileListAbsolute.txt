@@ -1,0 +1,9 @@
+C:\Users\Valtinho\Programas\ASPNETCORE\ProjetoLojaVendasWeb\ProjetoLojaVendasWeb.Repositorio\bin\Debug\netstandard2.0\ProjetoLojaVendasWeb.Repositorio.deps.json
+C:\Users\Valtinho\Programas\ASPNETCORE\ProjetoLojaVendasWeb\ProjetoLojaVendasWeb.Repositorio\bin\Debug\netstandard2.0\ProjetoLojaVendasWeb.Repositorio.dll
+C:\Users\Valtinho\Programas\ASPNETCORE\ProjetoLojaVendasWeb\ProjetoLojaVendasWeb.Repositorio\bin\Debug\netstandard2.0\ProjetoLojaVendasWeb.Repositorio.pdb
+C:\Users\Valtinho\Programas\ASPNETCORE\ProjetoLojaVendasWeb\ProjetoLojaVendasWeb.Repositorio\obj\Debug\netstandard2.0\ProjetoLojaVendasWeb.Repositorio.csprojAssemblyReference.cache
+C:\Users\Valtinho\Programas\ASPNETCORE\ProjetoLojaVendasWeb\ProjetoLojaVendasWeb.Repositorio\obj\Debug\netstandard2.0\ProjetoLojaVendasWeb.Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\Valtinho\Programas\ASPNETCORE\ProjetoLojaVendasWeb\ProjetoLojaVendasWeb.Repositorio\obj\Debug\netstandard2.0\ProjetoLojaVendasWeb.Repositorio.AssemblyInfoInputs.cache
+C:\Users\Valtinho\Programas\ASPNETCORE\ProjetoLojaVendasWeb\ProjetoLojaVendasWeb.Repositorio\obj\Debug\netstandard2.0\ProjetoLojaVendasWeb.Repositorio.AssemblyInfo.cs
+C:\Users\Valtinho\Programas\ASPNETCORE\ProjetoLojaVendasWeb\ProjetoLojaVendasWeb.Repositorio\obj\Debug\netstandard2.0\ProjetoLojaVendasWeb.Repositorio.dll
+C:\Users\Valtinho\Programas\ASPNETCORE\ProjetoLojaVendasWeb\ProjetoLojaVendasWeb.Repositorio\obj\Debug\netstandard2.0\ProjetoLojaVendasWeb.Repositorio.pdb
