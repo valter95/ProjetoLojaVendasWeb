@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "ProjetoLojaVendasWeb.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ProjetoLojaVendasWeb.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjetoLojaVendasWeb.Dominio.dll": {}
+        }
       }
     }
   },
@@ -171,11 +181,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "ProjetoLojaVendasWeb.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../ProjetoLojaVendasWeb.Dominio/ProjetoLojaVendasWeb.Dominio.csproj",
+      "msbuildProject": "../ProjetoLojaVendasWeb.Dominio/ProjetoLojaVendasWeb.Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "ProjetoLojaVendasWeb.Dominio >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -210,7 +226,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Valtinho\\Programas\\ASPNETCORE\\ProjetoLojaVendasWeb\\ProjetoLojaVendasWeb.Dominio\\ProjetoLojaVendasWeb.Dominio.csproj": {
+              "projectPath": "C:\\Users\\Valtinho\\Programas\\ASPNETCORE\\ProjetoLojaVendasWeb\\ProjetoLojaVendasWeb.Dominio\\ProjetoLojaVendasWeb.Dominio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

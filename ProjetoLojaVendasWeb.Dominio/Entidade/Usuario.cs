@@ -2,7 +2,7 @@
 
 namespace ProjetoLojaVendasWeb.Dominio.Entidade
 {
-    public class Usuario
+    public class Usuario : Entidade
     {
         public int Id { get; set; }
         public string Email { get; set; }
@@ -13,5 +13,12 @@ namespace ProjetoLojaVendasWeb.Dominio.Entidade
         //Usuario pode ter 1 ou * pedidos
         public ICollection<Pedido> Pedidos { get; set; }
 
+        public override void Validate()
+        {
+            if (string.IsNullOrEmpty(Email))
+                AdicionarCritica("E-mail não foi informado");
+            if (string.IsNullOrEmpty(Senha))
+                AdicionarCritica("Senha não foi informada");
+        }
     }
 }
