@@ -11,7 +11,7 @@ namespace ProjetoLojaVendasWeb.Dominio.Entidade
         public string SobreNome { get; set; }
 
         //Usuario pode ter 1 ou * pedidos
-        public ICollection<Pedido> Pedidos { get; set; }
+        public virtual ICollection<Pedido> Pedidos { get; set; }
 
         public override void Validate()
         {
