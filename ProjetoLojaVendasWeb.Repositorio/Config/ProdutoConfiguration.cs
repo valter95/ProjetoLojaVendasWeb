@@ -17,7 +17,7 @@ namespace ProjetoLojaVendasWeb.Repositorio.Config
                 .Property(p => p.Nome)
                 .IsRequired()
                 .HasMaxLength(200)
-                .HasColumnType("varchar");
+                .HasColumnType("varchar(100)");
             builder
                 .Property(p => p.Descricao)
                 .IsRequired()

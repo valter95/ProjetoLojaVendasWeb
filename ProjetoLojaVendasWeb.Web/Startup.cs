@@ -18,8 +18,7 @@ namespace ProjetoLojaVendasWeb.Web
             //Criando um arquivo json para criar a string de conexão do banco de dados 
             var builder = new ConfigurationBuilder();
             builder.AddJsonFile("config.json", optional: false, reloadOnChange: true);
-
-            Configuration = configuration;
+            Configuration = builder.Build();
         }
 
        
@@ -27,8 +26,8 @@ namespace ProjetoLojaVendasWeb.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             var connectionString = Configuration.GetConnectionString("MySqlConnection");
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<ProjetoLojaVendasWebContexto>(options =>
                                                                     options.UseLazyLoadingProxies()
                                                                     .UseMySql(connectionString, 

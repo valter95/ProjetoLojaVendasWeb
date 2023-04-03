@@ -22,7 +22,7 @@ namespace ProjetoLojaVendasWeb.Repositorio.Config
                 .Property(u => u.Nome)
                 .IsRequired()
                 .HasMaxLength(200)
-                .HasColumnType("varchar");
+                .HasColumnType("varchar(100)");
 
             builder
                 .Property(u => u.Senha)
@@ -32,7 +32,7 @@ namespace ProjetoLojaVendasWeb.Repositorio.Config
                 .Property(u => u.SobreNome)
                 .IsRequired()
                 .HasMaxLength(200)
-                .HasColumnType("varchar");
+                .HasColumnType("varchar(100)");
 
             builder
                 .HasMany(u => u.Pedidos)

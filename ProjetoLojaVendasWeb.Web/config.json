@@ -1,6 +1,5 @@
 {
-  "ConnectionString": {
+  "ConnectionStrings": {
     "MySqlConnection": "Server=localhost;Port=3306;Database=LojaVendasWeb;Uid=root;Pwd=root;"
-
   }
 }
