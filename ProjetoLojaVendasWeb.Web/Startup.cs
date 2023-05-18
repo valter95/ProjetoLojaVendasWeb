@@ -6,7 +6,9 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ProjetoLojaVendasWeb.Dominio.Contratos;
 using ProjetoLojaVendasWeb.Repositorio.Contexto;
+using ProjetoLojaVendasWeb.Repositorio.Repositorios;
 
 namespace ProjetoLojaVendasWeb.Web
 {
@@ -32,6 +34,8 @@ namespace ProjetoLojaVendasWeb.Web
                                                                     options.UseLazyLoadingProxies()
                                                                     .UseMySql(connectionString, 
                                                                         m => m.MigrationsAssembly("ProjetoLojaVendasWeb.Repositorio")));
+
+            services.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
 
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>

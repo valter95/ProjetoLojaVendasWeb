@@ -1,43 +1,50 @@
 ﻿using ProjetoLojaVendasWeb.Dominio.Contratos;
+using ProjetoLojaVendasWeb.Repositorio.Contexto;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ProjetoLojaVendasWeb.Repositorio.Repositorios
 {
     public class BaseRepositorio<TEntity> : IBaseRepositorio<TEntity> where TEntity : class
     {
-        public BaseRepositorio()
+        protected readonly ProjetoLojaVendasWebContexto ProjetoLojaContexto;
+        public BaseRepositorio(ProjetoLojaVendasWebContexto projetoLojaContexto)
         {
+            ProjetoLojaContexto = projetoLojaContexto;
 
         }
         public void Adicionar(TEntity entity)
         {
-            throw new NotImplementedException();
+            ProjetoLojaContexto.Set<TEntity>().Add(entity);
+            ProjetoLojaContexto.SaveChanges();
         }
 
         public void Atualizar(TEntity entity)
         {
-            throw new NotImplementedException();
+            ProjetoLojaContexto.Set<TEntity>().Update(entity);
+            ProjetoLojaContexto.SaveChanges();
         }
 
         public TEntity ObterPorId(int id)
         {
-            throw new NotImplementedException();
+            return ProjetoLojaContexto.Set<TEntity>().Find(id);
         }
 
         public IEnumerable<TEntity> ObterTodos()
         {
-            throw new NotImplementedException();
+            return ProjetoLojaContexto.Set<TEntity>().ToList();
         }
 
         public void Remover(TEntity entity)
         {
-            throw new NotImplementedException();
+            ProjetoLojaContexto.Set<TEntity>().Remove(entity);
+            ProjetoLojaContexto.SaveChanges();
         }
         public void Dispose()
         {
-            throw new NotImplementedException();
+            ProjetoLojaContexto.Dispose();
         }
 
     }
